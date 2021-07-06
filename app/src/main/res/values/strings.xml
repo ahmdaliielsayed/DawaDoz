@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DawaDoz</string>
+
+    <!-- SignIn Activity -->
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="username_required">Please, Enter your username!</string>
+    <string name="password_required">PLease, Enter your password!</string>
+    <string name="error">Error</string>
+    <string name="internet_connection">Wifi and mobile data closed, Open any connection and try again!</string>
+    <string name="ok">OK</string>
+</resources>

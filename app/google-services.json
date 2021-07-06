@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "982063646675",
+    "project_id": "dawa-doz",
+    "storage_bucket": "dawa-doz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982063646675:android:93a6f0fb13ac702c0cd126",
+        "android_client_info": {
+          "package_name": "com.example.dawadoz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982063646675-68u26u8e1u9i3a56uend2cd67mbmpt1v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dawadoz",
+            "certificate_hash": "bfddfb698302902f7a0346d79264a3749534f30b"
+          }
+        },
+        {
+          "client_id": "982063646675-4hjo5ggdvdu40h2n6f1cunp7n0jgh7la.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhVdd2R0ka9fIFuKt8LTQefuPXPOvgprg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982063646675-4hjo5ggdvdu40h2n6f1cunp7n0jgh7la.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
