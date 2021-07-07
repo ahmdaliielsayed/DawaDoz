@@ -1,6 +1,6 @@
 package com.example.dawadoz.ui.presenter;
 
-import com.example.dawadoz.db.entity.User;
+import com.example.dawadoz.db.entity.login.User;
 import com.example.dawadoz.repository.Repository;
 import com.example.dawadoz.ui.Presenter;
 import com.example.dawadoz.ui.view.activity.SignInActivity;
@@ -29,6 +29,11 @@ public class SignInPresenter implements Presenter.IPresenter {
 
     @Override
     public void showError(String error) {
+        signInActivity.showError(error);
+    }
+
+    @Override
+    public void showError(int error) {
         signInActivity.showError(error);
     }
 }

@@ -2,7 +2,6 @@ package com.example.dawadoz.ui.view.service;
 
 import android.app.ActivityManager;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
@@ -20,13 +19,10 @@ import static com.example.dawadoz.ui.view.SharedPrefManager.KEY_ACCESS_TOKEN;
 
 public class MyFirebaseInstanceIDService extends FirebaseMessagingService {
 
-    public static final String TOKEN_BROADCAST = "fcmtokenbroadcast";
-
     @Override
     public void onNewToken(@NonNull String deviceToken) {
         super.onNewToken(deviceToken);
 
-//        getApplicationContext().sendBroadcast(new Intent(TOKEN_BROADCAST));
         storeToken(deviceToken);
     }
 
@@ -38,7 +34,6 @@ public class MyFirebaseInstanceIDService extends FirebaseMessagingService {
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
 
-        Log.i("asdfg", remoteMessage.getNotification().getBody());
         if (!isAppIsInBackground(getApplicationContext())) {
             Handler handler = new Handler(Looper.getMainLooper());
             handler.post(new Runnable() {

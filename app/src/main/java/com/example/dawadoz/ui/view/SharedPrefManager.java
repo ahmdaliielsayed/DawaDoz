@@ -1,7 +1,7 @@
 package com.example.dawadoz.ui.view;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 
 public class SharedPrefManager {
@@ -16,11 +16,13 @@ public class SharedPrefManager {
     public static final String KEY_ACCESS_PASSWORD = "password";
     public static final String KEY_IS_LOGIN = "login";
 
+    @SuppressLint("CommitPrefEdits")
     public SharedPrefManager() {
         sharedPreferences = context.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
     }
 
+    @SuppressLint("CommitPrefEdits")
     public SharedPrefManager(Context context) {
         this.context = context;
         sharedPreferences = context.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);

@@ -10,4 +10,14 @@
     <string name="error">Error</string>
     <string name="internet_connection">Wifi and mobile data closed, Open any connection and try again!</string>
     <string name="ok">OK</string>
+
+    <!-- rv_product_item -->
+    <string name="product_name">ProductName</string>
+    <string name="used_for">Used For</string>
+    <string name="company_name">Company Name</string>
+    <string name="total_price">Total Price</string>
+    <string name="null_item">Item is not found</string>
+
+    <string name="errorResponse">Fail Response</string>
+    <string name="tokenFail">Fetching FCM registration token failed</string>
 </resources>

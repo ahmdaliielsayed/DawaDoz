@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -14,7 +13,7 @@ import androidx.databinding.DataBindingUtil;
 
 import com.example.dawadoz.R;
 import com.example.dawadoz.databinding.ActivitySignInBinding;
-import com.example.dawadoz.db.entity.User;
+import com.example.dawadoz.db.entity.login.User;
 import com.example.dawadoz.ui.Presenter;
 import com.example.dawadoz.ui.presenter.SignInPresenter;
 import com.example.dawadoz.ui.view.SharedPrefManager;
@@ -83,6 +82,13 @@ public class SignInActivity extends AppCompatActivity implements Presenter.IView
 
     @Override
     public void showError(String error) {
+        binding.btnLogin.setEnabled(true);
+        binding.progressBar.setVisibility(View.GONE);
+        Toast.makeText(this, error, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void showError(int error) {
         binding.btnLogin.setEnabled(true);
         binding.progressBar.setVisibility(View.GONE);
         Toast.makeText(this, error, Toast.LENGTH_LONG).show();
