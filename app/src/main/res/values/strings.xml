@@ -20,4 +20,6 @@
 
     <string name="errorResponse">Fail Response</string>
     <string name="tokenFail">Fetching FCM registration token failed</string>
+    <string name="wrong_paging">Something wrong!\nPlease, check your network and try again!</string>
+    <string name="no_data_found">Something wrong!\nThere exist no data!</string>
 </resources>
